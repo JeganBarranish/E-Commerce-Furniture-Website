@@ -15,14 +15,28 @@ app.use(
 );
 app.use(express.json());
 
-app.use("/api/auth", require("./routes/authRoutes"));
-app.use("/api/users", require("./routes/userRoutes"));
-app.use("/api/tasks", require("./routes/taskRoutes"));
-app.use("/api/admin", require("./routes/adminRoutes"));
+app.get("/", (req, res) => {
+  res.json({ 
+    status: "Backend is running",
+    message: "Furnify API Server",
+    endpoints: {
+      health: "/health",
+      auth: "/api/auth",
+      users: "/api/users",
+      tasks: "/api/tasks",
+      admin: "/api/admin"
+    }
+  });
+});
 
 app.get("/health", (req, res) => {
   res.json({ status: "ok" });
 });
+
+app.use("/api/auth", require("./routes/authRoutes"));
+app.use("/api/users", require("./routes/userRoutes"));
+app.use("/api/tasks", require("./routes/taskRoutes"));
+app.use("/api/admin", require("./routes/adminRoutes"));
 
 app.use((err, req, res, next) => {
   console.error("Unhandled error:", err);

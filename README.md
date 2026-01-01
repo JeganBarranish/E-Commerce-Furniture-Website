@@ -81,7 +81,6 @@ furnify/
 │   │   │   ├── userValidators.js  # User validation rules
 │   │   │   └── taskValidators.js  # Task validation rules
 │   │   └── server.js              # Express app entry point
-│   ├── .env                       # Environment variables
 │   └── package.json
 │
 ├── src/
@@ -164,25 +163,18 @@ cd ..
 
 ### 5. Configure Environment Variables
 
-**Backend (.env file)**
+For local development, you can set environment variables directly or use your system's environment variable configuration.
 
-Create `Backend/.env` file:
+**Backend Environment Variables:**
+- `PORT`: 5001 (default)
+- `MONGO_URI`: MongoDB connection string (local or Atlas)
+- `JWT_SECRET`: Secret key for JWT tokens
+- `FRONTEND_URL`: http://localhost:3000 (for CORS)
 
-```env
-PORT=5001
-MONGO_URI=mongodb://127.0.0.1:27017/furnify
-# OR for MongoDB Atlas:
-# MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/furnify?retryWrites=true&w=majority
-JWT_SECRET=your_super_secret_jwt_key_change_this_in_production
-```
+**Frontend Environment Variables:**
+- `REACT_APP_API_BASE_URL`: http://localhost:5001
 
-**Frontend (.env file)** (Optional)
-
-Create `.env` file in root directory:
-
-```env
-REACT_APP_API_BASE_URL=http://localhost:5001
-```
+**Note:** For deployment on Render, set environment variables in the Render dashboard. See [`RENDER_DEPLOYMENT.md`](./RENDER_DEPLOYMENT.md) for details.
 
 ---
 
@@ -362,18 +354,18 @@ curl -X GET http://localhost:5001/api/tasks \
 lsof -i :5001
 kill -9 <PID>
 
-# Or change PORT in Backend/.env
+# Or change PORT environment variable
 ```
 
 **MongoDB connection error:**
 - Ensure MongoDB is running locally, or
-- Update `MONGO_URI` in `Backend/.env` for MongoDB Atlas
+- Update `MONGO_URI` environment variable for MongoDB Atlas
 
 ### Frontend Issues
 
 **API calls failing:**
 - Ensure backend is running on port 5001
-- Check `REACT_APP_API_BASE_URL` in `.env`
+- Check `REACT_APP_API_BASE_URL` environment variable
 - Check browser console for CORS errors
 
 ---

@@ -1,6 +1,13 @@
 # Furnify API Documentation
 
 ## Base URL
+
+**Production:**
+```
+https://e-commerce-furniture-website-2.onrender.com/api
+```
+
+**Local Development:**
 ```
 http://localhost:5001/api
 ```

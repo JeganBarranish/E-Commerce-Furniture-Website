@@ -45,15 +45,19 @@ This guide will help you deploy your Furnify application to Render.
    - **Instance Type**: Free (for demo)
 
 5. Add Environment Variables:
-   - Click "Advanced" → "Add Environment Variable"
-   - Add these variables:
+   - Click "Environment" tab (or "Advanced" → "Add Environment Variable")
+   - **IMPORTANT**: You MUST add these variables before deploying:
      ```
-     PORT=5001
      MONGO_URI=<your-mongodb-atlas-connection-string>
      JWT_SECRET=<generate-a-random-secret-key>
+     ```
+   - Also add (can add after frontend deploys):
+     ```
+     PORT=5001
      FRONTEND_URL=<will-add-after-frontend-deployment>
      ```
    - For `JWT_SECRET`, generate a random string (you can use: `openssl rand -hex 32`)
+   - **NOTE**: Without MONGO_URI and JWT_SECRET, the deployment will fail!
 
 6. Click "Create Web Service"
 7. Wait for deployment (first deployment takes 3-5 minutes)

@@ -12,28 +12,28 @@ A modern, scalable full-stack web application for a furniture store with user au
 ##  Features
 
 ### Frontend Features
-- ✅ **Responsive UI** using Material-UI
-- ✅ **User Authentication** (Sign Up, Login, Logout)
-- ✅ **Protected Routes** - Login required for dashboard
-- ✅ **User Dashboard** with profile display
-- ✅ **Task Management** - Full CRUD operations
-- ✅ **Search & Filter** functionality for tasks
-- ✅ **Client-side Form Validation**
-- ✅ **Success/Error Notifications**
+- **Responsive UI** using Material-UI
+- **User Authentication** (Sign Up, Login, Logout)
+- **Protected Routes** - Login required for dashboard
+- **User Dashboard** with profile display
+- **Task Management** - Full CRUD operations
+- **Search & Filter** functionality for tasks
+- **Client-side Form Validation**
+- **Success/Error Notifications**
 
 ### Backend Features
-- ✅ **RESTful API** with Node.js & Express
-- ✅ **JWT-based Authentication**
-- ✅ **Password Hashing** with bcrypt
-- ✅ **MongoDB Database** integration
-- ✅ **Server-side Validation** with express-validator
-- ✅ **Error Handling** middleware
-- ✅ **Modular Architecture**
-- ✅ **Admin Panel** - View all users
+- **RESTful API** with Node.js & Express
+- **JWT-based Authentication**
+- **Password Hashing** with bcrypt
+- **MongoDB Database** integration
+- **Server-side Validation** with express-validator
+- **Error Handling** middleware
+- **Modular Architecture**
+- **Admin Panel** - View all users
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React.js** 19.1.0 - UI library
@@ -52,7 +52,7 @@ A modern, scalable full-stack web application for a furniture store with user au
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 furnify/
@@ -110,7 +110,7 @@ furnify/
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have the following installed:
 
@@ -120,7 +120,7 @@ Before you begin, ensure you have the following installed:
 
 ---
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### 1. Clone the Repository
 
@@ -152,9 +152,6 @@ cd ..
    ```bash
    # macOS (via Homebrew)
    brew services start mongodb-community@8.0
-   
-   # Linux
-   sudo systemctl start mongod
    
    # Windows
    net start MongoDB
@@ -189,7 +186,7 @@ REACT_APP_API_BASE_URL=http://localhost:5001
 
 ---
 
-## 🏃 Running the Project
+## Running the Project
 
 ### Development Mode
 
@@ -223,7 +220,7 @@ npm start
 
 ---
 
-## 📚 API Documentation
+## API Documentation
 
 Complete API documentation is available in [`API_DOCUMENTATION.md`](./API_DOCUMENTATION.md)
 
@@ -247,7 +244,7 @@ Complete API documentation is available in [`API_DOCUMENTATION.md`](./API_DOCUME
 
 ---
 
-## 🌟 Features Overview
+## Features Overview
 
 ### Authentication
 
@@ -274,20 +271,20 @@ Complete API documentation is available in [`API_DOCUMENTATION.md`](./API_DOCUME
 
 ---
 
-## 🔐 Security Features
+## Security Features
 
-- ✅ **Password Hashing** - bcrypt with 10 salt rounds
-- ✅ **JWT Authentication** - Secure token-based auth
-- ✅ **Input Validation** - Client-side and server-side (express-validator)
-- ✅ **SQL Injection Prevention** - Mongoose parameterized queries
-- ✅ **XSS Protection** - React's built-in escaping
-- ✅ **CORS Configuration** - Controlled cross-origin requests
-- ✅ **Error Handling** - Centralized error middleware
-- ✅ **Email Normalization** - Automatic email sanitization
+- **Password Hashing** - bcrypt with 10 salt rounds
+- **JWT Authentication** - Secure token-based auth
+- **Input Validation** - Client-side and server-side (express-validator)
+- **SQL Injection Prevention** - Mongoose parameterized queries
+- **XSS Protection** - React's built-in escaping
+- **CORS Configuration** - Controlled cross-origin requests
+- **Error Handling** - Centralized error middleware
+- **Email Normalization** - Automatic email sanitization
 
 ---
 
-## 🚀 Production Deployment
+## Production Deployment
 
 For detailed production deployment and scaling guide, see [`SCALING_GUIDE.md`](./SCALING_GUIDE.md)
 
@@ -306,7 +303,7 @@ For detailed production deployment and scaling guide, see [`SCALING_GUIDE.md`](.
 
 ---
 
-## 📝 Available Scripts
+## Available Scripts
 
 ### Frontend
 
@@ -321,7 +318,7 @@ For detailed production deployment and scaling guide, see [`SCALING_GUIDE.md`](.
 
 ---
 
-## 🧪 Testing the API
+## Testing the API
 
 ### Using Postman
 
@@ -355,7 +352,7 @@ curl -X GET http://localhost:5001/api/tasks \
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Backend Issues
 
@@ -381,7 +378,7 @@ kill -9 <PID>
 
 ---
 
-## 📖 Additional Documentation
+## Additional Documentation
 
 - [`API_DOCUMENTATION.md`](./API_DOCUMENTATION.md) - Complete API reference
 - [`SCALING_GUIDE.md`](./SCALING_GUIDE.md) - Production scaling guide
@@ -389,7 +386,7 @@ kill -9 <PID>
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -401,19 +398,19 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the ISC License.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 Created as a full-stack project demonstration with authentication, dashboard, and CRUD operations.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - React.js community
 - Material-UI team
@@ -423,10 +420,10 @@ Created as a full-stack project demonstration with authentication, dashboard, an
 
 ---
 
-## 📞 Support
+## Support
 
 For issues, questions, or contributions, please open an issue on the GitHub repository.
 
 ---
 
-**Happy Coding! 🚀**
+****
